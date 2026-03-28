@@ -2,75 +2,201 @@
 const coiffuresData = [
     {
         id: 1,
-        name: "Coupe Classique",
-        description: "Une coupe nette et intemporelle pour un look professionnel",
-        price: 25,
-        duration: 30,
-        barber: "Jean",
-        image: "https://images.unsplash.com/photo-1599351431702-11211371dc75?w=400&h=300&fit=crop"
+        name: "Tresses Classiques",
+        description: "Tresses intemporelles pour un look sophistiqué et soigné",
+        price: 55,
+        duration: 120,
+        barber: "Marie",
+        image: "images/braids.jpg"
     },
     {
         id: 2,
-        name: "Coupe Dégradée Homme",
-        description: "Dégradé moderne avec finition parfaite des contours",
-        price: 35,
-        duration: 45,
-        barber: "Marc",
-        image: "https://images.unsplash.com/photo-1599351431702-11211371dc75?w=400&h=300&fit=crop"
+        name: "Cornrows",
+        description: "Cornrows modernes et élégantes, parfaites pour tous les styles",
+        price: 65,
+        duration: 150,
+        barber: "Sophie",
+        image: "images/cornrow.wep.webp"
     },
     {
         id: 3,
-        name: "Coupe Femme Courte",
-        description: "Coupe moderne et pratique pour les cheveux courts",
-        price: 40,
-        duration: 45,
-        barber: "Sophie",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
+        name: "Dreadlocks",
+        description: "Dreadlocks stylisées pour un look unique et tendance",
+        price: 80,
+        duration: 180,
+        barber: "Aissa",
+        image: "images/dred.jpg"
     },
     {
         id: 4,
-        name: "Coupe Femme Mi-Longue",
-        description: "Style élégant avec mise en forme professionnelle",
-        price: 50,
-        duration: 60,
-        barber: "Sophie",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
+        name: "Locks Courtes",
+        description: "Locks courtes élégantes pour un style moderne et facile d'entretien",
+        price: 70,
+        duration: 160,
+        barber: "Assya",
+        image: "images/locks.jpg"
     },
     {
         id: 5,
-        name: "Coupe Femme Longue",
-        description: "Soins et coupe pour cheveux longs avec finitions",
+        name: "Twists",
+        description: "Twists stylisés pour un look chic et contemporain",
         price: 60,
-        duration: 75,
-        barber: "Marie",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
+        duration: 130,
+        barber: "Haby",
+        image: "images/twist.jpg"
     },
     {
         id: 6,
-        name: "Coloration Complète",
-        description: "Coloration complète avec produits de qualité premium",
-        price: 95,
-        duration: 120,
-        barber: "Marie",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
+        name: "Coupe Crépue",
+        description: "Coupe crépue moderne avec finitions impeccables",
+        price: 45,
+        duration: 75,
+        barber: "Khaly",
+        image: "images/crepu.webp"
     },
     {
         id: 7,
-        name: "Balayage/Mèches",
-        description: "Balayage ou mèches pour un effet naturel et lumineux",
-        price: 75,
+        name: "Carré Long",
+        description: "Carré long élégant pour un style feminin et intemporel",
+        price: 50,
         duration: 90,
-        barber: "Sophie",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
+        barber: "Aissa",
+        image: "images/carrelong.jpg"
     },
     {
         id: 8,
-        name: "Traitement Cheveux",
-        description: "Soin profond pour cheveux abîmés ou secs",
-        price: 45,
+        name: "Queue de Cheval Voluptueuse",
+        description: "Queue de cheval volumineuse et élégante pour toutes les occasions",
+        price: 40,
+        duration: 60,
+        barber: "Assya",
+        image: "images/queuecheval.jpg"
+    },
+    {
+        id: 9,
+        name: "Coupe Boule",
+        description: "Coupe boule stylisée pour un look rond et moderne",
+        price: 35,
+        duration: 60,
+        barber: "Haby",
+        image: "images/coupe-boule.jpg"
+    },
+    {
+        id: 10,
+        name: "Coupe Enveloppante",
+        description: "Coupe enveloppante élégante pour un effet sophistiqué",
+        price: 55,
+        duration: 90,
+        barber: "Khaly",
+        image: "images/coupeenv.webp"
+    },
+    {
+        id: 11,
+        name: "Crépus",
+        description: "Cheveux crépus sublimés avec soin et expertise",
+        price: 50,
+        duration: 100,
+        barber: "Aissa",
+        image: "images/crepus.jpg"
+    },
+    {
+        id: 12,
+        name: "Dégradé Long",
+        description: "Dégradé long moderne pour un style élégant et léger",
+        price: 60,
+        duration: 110,
+        barber: "Assya",
+        image: "images/degradelong.webp"
+    },
+    {
+        id: 13,
+        name: "Frange Effilée",
+        description: "Frange effilée tendance pour sublimer votre visage",
+        price: 30,
         duration: 45,
-        barber: "Jean",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
+        barber: "Haby",
+        image: "images/frangeefillé.jpg"
+    },
+    {
+        id: 14,
+        name: "Frange Rideau",
+        description: "Frange rideau élégante pour un look rétro-moderne",
+        price: 32,
+        duration: 50,
+        barber: "Khaly",
+        image: "images/frangerideau.jpg"
+    },
+    {
+        id: 15,
+        name: "Ponytail Chic",
+        description: "Ponytail élégant et stylisé pour toutes les occasions",
+        price: 38,
+        duration: 55,
+        barber: "Aissa",
+        image: "images/ponytail.jpg"
+    },
+    {
+        id: 16,
+        name: "Box Braids",
+        description: "Box braids volumineuses et robustes pour un look tendance",
+        price: 75,
+        duration: 180,
+        barber: "Assya",
+        image: "images/Box braids.jpg"
+    },
+    {
+        id: 17,
+        name: "Chignon",
+        description: "Chignon sophistiqué pour un style élégant et intemporel",
+        price: 45,
+        duration: 75,
+        barber: "Haby",
+        image: "images/chignon.jpg"
+    },
+    {
+        id: 18,
+        name: "Coupe Shag",
+        description: "Coupe shag texturée pour un look rock et moderne",
+        price: 55,
+        duration: 90,
+        barber: "Khaly",
+        image: "images/coupe-shag.jpg"
+    },
+    {
+        id: 19,
+        name: "Wolf Cut",
+        description: "Wolf cut tendance pour un style audacieux et dynamique",
+        price: 65,
+        duration: 100,
+        barber: "Aissa",
+        image: "images/Coupe-wolf-cut.jpg"
+    },
+    {
+        id: 20,
+        name: "Knotless Braids",
+        description: "Knotless braids délicates pour plus de confort et de légèreté",
+        price: 70,
+        duration: 160,
+        barber: "Assya",
+        image: "images/Knotless braids.webp"
+    },
+    {
+        id: 21,
+        name: "Postiche Queue de Cheval",
+        description: "Postiche queue de cheval pour transformer votre look facilement",
+        price: 50,
+        duration: 45,
+        barber: "Haby",
+        image: "images/Postiche-queue-de-cheval.jpeg"
+    },
+    {
+        id: 22,
+        name: "Vanilles",
+        description: "Vanilles classiques pour un style doux et afro-chic",
+        price: 65,
+        duration: 140,
+        barber: "Khaly",
+        image: "images/Vanilles.jpeg"
     }
 ];
 

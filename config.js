@@ -4,9 +4,9 @@
 const CONFIG = {
     // Informations du salon
     salon: {
-        name: "BeautyBook",
+        name: "Beauty book",
         slogan: "Réservez votre coiffure en ligne",
-        email: "contact@beautybook.fr",
+        email: "contact@Beautybook.fr",
         phone: "+33 1 23 45 67 89",
         address: "123 Rue de la Beauté, 75000 Paris"
     },
@@ -22,10 +22,10 @@ const CONFIG = {
 
     // Configuration des coiffeurs
     barbers: [
-        { id: 1, name: "Jean", specialite: "Coiffeur Homme", color: "#667eea" },
-        { id: 2, name: "Marc", specialite: "Coiffeur Homme", color: "#764ba2" },
-        { id: 3, name: "Sophie", specialite: "Coiffeuse Femme", color: "#11998e" },
-        { id: 4, name: "Marie", specialite: "Coloriste", color: "#f39c12" }
+        { id: 1, name: "Aissa", specialite: "Coiffeur femme", color: "#667eea" },
+        { id: 2, name: "Assya", specialite: "Coiffeur femme", color: "#764ba2" },
+        { id: 3, name: "Haby", specialite: "Coiffeuse Femme", color: "#11998e" },
+        { id: 4, name: "Khaly", specialite: "Coloriste", color: "#f39c12" }
     ],
 
     // Configuration du paiement
