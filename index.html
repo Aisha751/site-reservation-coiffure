@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyBook - Réservation de Coiffures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>✨ BeautyBook</h1>
+                <p>Réservez votre coiffure en ligne</p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <button class="nav-btn active" data-tab="coiffures">Coiffures</button>
+            <button class="nav-btn" data-tab="reservations">Mes Réservations</button>
+            <button class="nav-btn" data-tab="calendar">Calendrier</button>
+        </nav>
+
+        <!-- Contenu principal -->
+        <main class="main-content">
+            <!-- Onglet Coiffures -->
+            <section id="coiffures" class="tab-content active">
+                <div class="filters">
+                    <input type="text" id="searchInput" placeholder="Rechercher une coiffure..." class="search-box">
+                    <select id="priceFilter" class="filter-select">
+                        <option value="">Tous les prix</option>
+                        <option value="low">Moins de 30€</option>
+                        <option value="medium">30€ - 60€</option>
+                        <option value="high">Plus de 60€</option>
+                    </select>
+                </div>
+
+                <div class="coiffures-grid" id="coiffuresGrid">
+                    <!-- Les coiffures seront générées par JavaScript -->
+                </div>
+            </section>
+
+            <!-- Onglet Réservations -->
+            <section id="reservations" class="tab-content">
+                <h2>Mes Réservations</h2>
+                <div class="reservations-list" id="reservationsList">
+                    <!-- Les réservations seront affichées ici -->
+                </div>
+            </section>
+
+            <!-- Onglet Calendrier -->
+            <section id="calendar" class="tab-content">
+                <h2>Calendrier des Disponibilités</h2>
+                <div class="calendar-container" id="calendarContainer">
+                    <!-- Le calendrier sera généré par JavaScript -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal de détails de coiffure -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Coiffure" class="modal-image">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-details">
+                        <p><strong>Prix:</strong> <span id="modalPrice"></span>€</p>
+                        <p><strong>Durée:</strong> <span id="modalDuration"></span> minutes</p>
+                        <p><strong>Coiffeur:</strong> <span id="modalBarber"></span></p>
+                    </div>
+                    <div class="reservation-form">
+                        <div class="form-group">
+                            <label for="dateInput">Date:</label>
+                            <input type="date" id="dateInput" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="timeInput">Heure:</label>
+                            <select id="timeInput" class="form-input">
+                                <option value="">Sélectionner une heure</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientName">Votre nom:</label>
+                            <input type="text" id="clientName" class="form-input" placeholder="Entrez votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientPhone">Téléphone:</label>
+                            <input type="tel" id="clientPhone" class="form-input" placeholder="Entrez votre téléphone">
+                        </div>
+                    </div>
+                    <button id="reserveBtn" class="btn btn-primary">Réserver et Payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de paiement -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content payment-modal">
+            <span class="close close-payment">&times;</span>
+            <h2>Paiement Sécurisé</h2>
+            <div class="payment-info">
+                <p><strong>Service:</strong> <span id="paymentService"></span></p>
+                <p><strong>Montant:</strong> <span id="paymentAmount"></span>€</p>
+                <p><strong>Date/Heure:</strong> <span id="paymentDateTime"></span></p>
+            </div>
+            <div class="payment-form">
+                <div class="form-group">
+                    <label for="cardName">Titulaire de la carte:</label>
+                    <input type="text" id="cardName" class="form-input" placeholder="Jean Dupont">
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Numéro de carte:</label>
+                    <input type="text" id="cardNumber" class="form-input" placeholder="1234 5678 9012 3456" maxlength="19">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cardExpiry">Expiration:</label>
+                        <input type="text" id="cardExpiry" class="form-input" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="cardCVV">CVV:</label>
+                        <input type="text" id="cardCVV" class="form-input" placeholder="123" maxlength="3">
+                    </div>
+                </div>
+            </div>
+            <button id="confirmPaymentBtn" class="btn btn-success">Confirmer le Paiement</button>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

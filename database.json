@@ -1,0 +1,237 @@
+{
+  "coiffures": [
+    {
+      "id": 1,
+      "name": "Coupe Classique",
+      "description": "Une coupe nette et intemporelle pour un look professionnel",
+      "price": 25,
+      "duration": 30,
+      "barber_ids": [1],
+      "image": "https://images.unsplash.com/photo-1599351431702-11211371dc75?w=400&h=300&fit=crop",
+      "category": "homme",
+      "popularity": 8
+    },
+    {
+      "id": 2,
+      "name": "Coupe Dégradée Homme",
+      "description": "Dégradé moderne avec finition parfaite des contours",
+      "price": 35,
+      "duration": 45,
+      "barber_ids": [2],
+      "image": "https://images.unsplash.com/photo-1599351431702-11211371dc75?w=400&h=300&fit=crop",
+      "category": "homme",
+      "popularity": 9
+    },
+    {
+      "id": 3,
+      "name": "Coupe Femme Courte",
+      "description": "Coupe moderne et pratique pour les cheveux courts",
+      "price": 40,
+      "duration": 45,
+      "barber_ids": [3],
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      "category": "femme",
+      "popularity": 8
+    },
+    {
+      "id": 4,
+      "name": "Coupe Femme Mi-Longue",
+      "description": "Style élégant avec mise en forme professionnelle",
+      "price": 50,
+      "duration": 60,
+      "barber_ids": [3],
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      "category": "femme",
+      "popularity": 9
+    },
+    {
+      "id": 5,
+      "name": "Coupe Femme Longue",
+      "description": "Soins et coupe pour cheveux longs avec finitions",
+      "price": 60,
+      "duration": 75,
+      "barber_ids": [4],
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      "category": "femme",
+      "popularity": 8
+    },
+    {
+      "id": 6,
+      "name": "Coloration Complète",
+      "description": "Coloration complète avec produits de qualité premium",
+      "price": 95,
+      "duration": 120,
+      "barber_ids": [4],
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      "category": "couleur",
+      "popularity": 9
+    },
+    {
+      "id": 7,
+      "name": "Balayage/Mèches",
+      "description": "Balayage ou mèches pour un effet naturel et lumineux",
+      "price": 75,
+      "duration": 90,
+      "barber_ids": [3],
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      "category": "couleur",
+      "popularity": 8
+    },
+    {
+      "id": 8,
+      "name": "Traitement Cheveux",
+      "description": "Soin profond pour cheveux abîmés ou secs",
+      "price": 45,
+      "duration": 45,
+      "barber_ids": [1],
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      "category": "soin",
+      "popularity": 7
+    }
+  ],
+  "barbers": [
+    {
+      "id": 1,
+      "name": "Jean",
+      "specialite": "Coiffeur Homme",
+      "bio": "Expert en coupes classiques et modernes",
+      "experience": "15 ans",
+      "rating": 4.8,
+      "reviews": 45,
+      "image": "https://via.placeholder.com/150",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Marc",
+      "specialite": "Coiffeur Homme",
+      "bio": "Spécialiste des dégradés et contours",
+      "experience": "12 ans",
+      "rating": 4.7,
+      "reviews": 38,
+      "image": "https://via.placeholder.com/150",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Sophie",
+      "specialite": "Coiffeuse Femme",
+      "bio": "Styliste en coupes et mises en forme",
+      "experience": "18 ans",
+      "rating": 4.9,
+      "reviews": 62,
+      "image": "https://via.placeholder.com/150",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Marie",
+      "specialite": "Coloriste",
+      "bio": "Experte en coloration et traitement des cheveux",
+      "experience": "20 ans",
+      "rating": 5.0,
+      "reviews": 71,
+      "image": "https://via.placeholder.com/150",
+      "active": true
+    }
+  ],
+  "reservations": [
+    {
+      "id": "res_001",
+      "coiffure_id": 1,
+      "barber_id": 1,
+      "user_id": "user_001",
+      "client_name": "Jean Dupont",
+      "client_phone": "0612345678",
+      "client_email": "jean@example.com",
+      "date": "2024-04-15",
+      "time": "14:30",
+      "duration": 30,
+      "price": 25,
+      "status": "confirmed",
+      "payment_status": "paid",
+      "created_at": "2024-03-28T10:30:00Z",
+      "notes": ""
+    },
+    {
+      "id": "res_002",
+      "coiffure_id": 3,
+      "barber_id": 3,
+      "user_id": "user_002",
+      "client_name": "Marie Renard",
+      "client_phone": "0687654321",
+      "client_email": "marie@example.com",
+      "date": "2024-04-16",
+      "time": "10:00",
+      "duration": 45,
+      "price": 40,
+      "status": "confirmed",
+      "payment_status": "paid",
+      "created_at": "2024-03-27T15:45:00Z",
+      "notes": ""
+    }
+  ],
+  "users": [
+    {
+      "id": "user_001",
+      "email": "jean@example.com",
+      "password_hash": "hashed_password",
+      "first_name": "Jean",
+      "last_name": "Dupont",
+      "phone": "0612345678",
+      "created_at": "2024-01-15T10:30:00Z",
+      "role": "client"
+    },
+    {
+      "id": "user_002",
+      "email": "marie@example.com",
+      "password_hash": "hashed_password",
+      "first_name": "Marie",
+      "last_name": "Renard",
+      "phone": "0687654321",
+      "created_at": "2024-02-20T14:15:00Z",
+      "role": "client"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_001",
+      "reservation_id": "res_001",
+      "amount": 25.00,
+      "currency": "EUR",
+      "method": "card",
+      "status": "succeeded",
+      "transaction_id": "ch_123456789",
+      "created_at": "2024-03-28T10:35:00Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_001",
+      "reservation_id": "res_001",
+      "barber_id": 1,
+      "user_id": "user_001",
+      "rating": 5,
+      "comment": "Très satisfait de la coupe ! Reviendrais certainement.",
+      "created_at": "2024-04-16T16:00:00Z"
+    }
+  ],
+  "working_hours": {
+    "monday": { "start": "09:00", "end": "17:00" },
+    "tuesday": { "start": "09:00", "end": "17:00" },
+    "wednesday": { "start": "09:00", "end": "17:00" },
+    "thursday": { "start": "09:00", "end": "17:00" },
+    "friday": { "start": "09:00", "end": "17:00" },
+    "saturday": { "start": "09:00", "end": "13:00" },
+    "sunday": { "closed": true }
+  },
+  "settings": {
+    "salon_name": "BeautyBook",
+    "salon_email": "contact@beautybook.fr",
+    "salon_phone": "+33 1 23 45 67 89",
+    "salon_address": "123 Rue de la Beauté, 75000 Paris",
+    "timezone": "Europe/Paris",
+    "currency": "EUR",
+    "language": "fr"
+  }
+}

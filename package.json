@@ -1,0 +1,24 @@
+{
+  "name": "beautybook-reservation",
+  "version": "1.0.0",
+  "description": "Site web de réservation de coiffures en ligne",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "echo 'Ouvrez index.html dans votre navigateur'",
+    "test": "echo 'Tests: parcourir les services, faire une réservation, payer'"
+  },
+  "keywords": [
+    "réservation",
+    "coiffure",
+    "beauté",
+    "barbershop",
+    "salon"
+  ],
+  "author": "BeautyBook",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {}
+}
